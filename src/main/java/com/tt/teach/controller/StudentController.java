@@ -11,4 +11,9 @@ import javax.annotation.Resource;
 public class StudentController {
     @Resource
     private StudentService StudentService;
+
+    @RequestMapping("/login")
+    public String login() {
+        return "/student/login";
+    }
 }
