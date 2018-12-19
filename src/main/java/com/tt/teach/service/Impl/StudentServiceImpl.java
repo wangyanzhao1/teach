@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Service
 public class StudentServiceImpl implements StudentService {
@@ -17,6 +18,11 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public Student doLogin(Student student) {
         return studentDao.doLogin(student);
+    }
+
+    @Override
+    public List<Student> getStudentList() {
+        return studentDao.getStudentList();
     }
 
 
