@@ -1,6 +1,12 @@
 package com.tt.teach.pojo;
 
 import java.util.Date;
+/**
+ * @作者：朕很萌
+ * @时间：2018/12/19 20:10
+ * @描述：学生实体类
+ *
+ */
 
 public class Student {
     private Integer studentNo;
@@ -13,6 +19,15 @@ public class Student {
     private  Date bornDate;
     private String email;
     private String identityCard;
+    private String gradeName;
+
+    public String getGradeName() {
+        return gradeName;
+    }
+
+    public void setGradeName(String gradeName) {
+        this.gradeName = gradeName;
+    }
 
     public Student() {
     }
